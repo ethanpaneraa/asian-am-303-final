@@ -28,6 +28,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+          NEXT_PUBLIC_BASE_PATH: /asian-am-303-final
 
       - name: List public directory
         run: ls -la public/
