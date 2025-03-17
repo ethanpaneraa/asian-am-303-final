@@ -1,10 +1,19 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Calendar, Clock, MapPin } from "lucide-react"
+"use client";
+
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Calendar, Clock, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -17,7 +26,8 @@ export default function ContactPage() {
                 Contact & Booking
               </h1>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                Join us for a transformative weekend of beauty, wellness, and cultural exploration
+                Join us for a transformative weekend of beauty, wellness, and
+                cultural exploration
               </p>
             </div>
           </div>
@@ -33,41 +43,51 @@ export default function ContactPage() {
                   Book Your Experience
                 </h2>
                 <p className="mt-2 text-muted-foreground">
-                  Fill out the form below to reserve your spot at the Luminara Wellness Retreat.
+                  Fill out the form below to reserve your spot at the Luminara
+                  Wellness Retreat.
                 </p>
               </div>
 
               <Card>
                 <CardHeader>
                   <CardTitle>Retreat Details</CardTitle>
-                  <CardDescription>Important information about the upcoming retreat</CardDescription>
+                  <CardDescription>
+                    Important information about the upcoming retreat
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-5 w-5 text-[#9c8b7d]" />
                     <div>
                       <p className="font-medium">Dates</p>
-                      <p className="text-sm text-muted-foreground">June 15-17, 2025</p>
+                      <p className="text-sm text-muted-foreground">
+                        June 15-17, 2025
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="h-5 w-5 text-[#9c8b7d]" />
                     <div>
                       <p className="font-medium">Location</p>
-                      <p className="text-sm text-muted-foreground">Evanston Wellness Center, Evanston, IL</p>
+                      <p className="text-sm text-muted-foreground">
+                        Evanston Wellness Center, Evanston, IL
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-5 w-5 text-[#9c8b7d]" />
                     <div>
                       <p className="font-medium">Schedule</p>
-                      <p className="text-sm text-muted-foreground">Friday 5pm - Sunday 2pm</p>
+                      <p className="text-sm text-muted-foreground">
+                        Friday 5pm - Sunday 2pm
+                      </p>
                     </div>
                   </div>
                 </CardContent>
                 <CardFooter>
                   <p className="text-sm text-muted-foreground">
-                    Space is limited to ensure an intimate and personalized experience.
+                    Space is limited to ensure an intimate and personalized
+                    experience.
                   </p>
                 </CardFooter>
               </Card>
@@ -85,17 +105,29 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  Price includes all workshops, materials, meals, and refreshments. Accommodation is not included.
+                  Price includes all workshops, materials, meals, and
+                  refreshments. Accommodation is not included.
                 </p>
               </div>
             </div>
 
             <div>
-              <form className="space-y-6">
+              <form
+                className="space-y-6"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  alert(
+                    "Oh... this actually isn't a real retreat... but thanks for submitting though!"
+                  );
+                }}
+              >
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="first-name">First name</Label>
-                    <Input id="first-name" placeholder="Enter your first name" />
+                    <Input
+                      id="first-name"
+                      placeholder="Enter your first name"
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="last-name">Last name</Label>
@@ -104,11 +136,19 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="Enter your email" />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone</Label>
-                  <Input id="phone" type="tel" placeholder="Enter your phone number" />
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="Enter your phone number"
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Special requests or questions</Label>
@@ -117,7 +157,10 @@ export default function ContactPage() {
                     placeholder="Let us know if you have any dietary restrictions, accessibility needs, or questions"
                   />
                 </div>
-                <Button type="submit" className="w-full bg-[#9c8b7d] hover:bg-[#7d6e62]">
+                <Button
+                  type="submit"
+                  className="w-full bg-[#9c8b7d] hover:bg-[#7d6e62]"
+                >
                   Book Now
                 </Button>
                 <p className="text-xs text-center text-muted-foreground">
@@ -137,7 +180,9 @@ export default function ContactPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <h2 className="text-2xl font-serif tracking-tighter sm:text-3xl text-[#3a3a3a]">Contact Us</h2>
+              <h2 className="text-2xl font-serif tracking-tighter sm:text-3xl text-[#3a3a3a]">
+                Contact Us
+              </h2>
               <p className="mt-2 text-muted-foreground">
                 Have questions about the retreat? Get in touch with our team.
               </p>
@@ -148,7 +193,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-medium">Address</p>
-                    <p className="text-sm text-muted-foreground">1234 Wellness Way, Evanston, IL 60201</p>
+                    <p className="text-sm text-muted-foreground">
+                      1234 Wellness Way, Evanston, IL 60201
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -169,7 +216,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-sm text-muted-foreground">(555) 123-4567</p>
+                    <p className="text-sm text-muted-foreground">
+                      (555) 123-4567
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -191,40 +240,52 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">info@luminara-retreat.com</p>
+                    <p className="text-sm text-muted-foreground">
+                      info@luminara-retreat.com
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Frequently Asked Questions</h3>
+              <h3 className="text-xl font-semibold">
+                Frequently Asked Questions
+              </h3>
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <h4 className="font-medium">What should I bring to the retreat?</h4>
+                  <h4 className="font-medium">
+                    What should I bring to the retreat?
+                  </h4>
                   <p className="text-sm text-muted-foreground">
-                    Comfortable clothing for yoga and meditation, a journal, and an open mind. A detailed packing list
-                    will be sent upon registration.
+                    Comfortable clothing for yoga and meditation, a journal, and
+                    an open mind. A detailed packing list will be sent upon
+                    registration.
                   </p>
                 </div>
                 <div className="space-y-2">
                   <h4 className="font-medium">Is accommodation included?</h4>
                   <p className="text-sm text-muted-foreground">
-                    No, accommodation is not included in the retreat price. We can recommend nearby hotels and lodging
-                    options.
+                    No, accommodation is not included in the retreat price. We
+                    can recommend nearby hotels and lodging options.
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="font-medium">What is the cancellation policy?</h4>
+                  <h4 className="font-medium">
+                    What is the cancellation policy?
+                  </h4>
                   <p className="text-sm text-muted-foreground">
-                    Full refunds are available up to 30 days before the retreat. 50% refunds are available up to 14 days
-                    before.
+                    Full refunds are available up to 30 days before the retreat.
+                    50% refunds are available up to 14 days before.
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="font-medium">Do I need prior experience with yoga or meditation?</h4>
+                  <h4 className="font-medium">
+                    Do I need prior experience with yoga or meditation?
+                  </h4>
                   <p className="text-sm text-muted-foreground">
-                    No prior experience is necessary. All activities are designed to be accessible to beginners while
-                    still engaging for experienced practitioners.
+                    No prior experience is necessary. All activities are
+                    designed to be accessible to beginners while still engaging
+                    for experienced practitioners.
                   </p>
                 </div>
               </div>
@@ -233,6 +294,5 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
-
