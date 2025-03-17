@@ -201,8 +201,8 @@ export default function ExperiencePage() {
                         Yoga & The Search for Authenticity
                       </h3>
                       <p className="text-muted-foreground">
-                        A session on yoga's decontextualization in the West and
-                        how to practice it ethically.
+                        A session on yoga&apos;s decontextualization in the West
+                        and how to practice it ethically.
                       </p>
                     </div>
                     <div className="space-y-2">

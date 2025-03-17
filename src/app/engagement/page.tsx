@@ -92,7 +92,7 @@ export default function EthicalEngagementPage() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Consider how power, race, and economic privilege shape who
-                  gets to "consume" wellness.
+                  gets to &quot;consume&quot; wellness.
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                   <li>
