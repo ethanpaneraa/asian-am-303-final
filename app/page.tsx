@@ -47,9 +47,7 @@ export default function Home() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-xl lg:order-last">
                 <Image
-                  src={`${
-                    process.env.NEXT_PUBLIC_BASE_PATH || ""
-                  }/bamboo-forest.jpg`}
+                  src="/placeholder.svg?height=800&width=800"
                   alt="Serene tea ceremony setting"
                   fill
                   className="object-cover"
@@ -164,6 +162,180 @@ export default function Home() {
                   </Link>
                 </Button>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-serif tracking-tighter sm:text-4xl md:text-5xl text-[#3a3a3a]">
+                  Transformative Experiences
+                </h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+                  Hear from past participants about their journey with Luminara
+                </p>
+              </div>
+            </div>
+
+            <div className="mx-auto grid max-w-6xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
+              {/* Testimonial 1 */}
+              <div className="flex flex-col items-center space-y-4 rounded-xl bg-[#f8f5f2] p-6 text-center">
+                <div className="relative h-20 w-20 overflow-hidden rounded-full">
+                  <Image
+                    src="https://t4.ftcdn.net/jpg/04/25/65/97/360_F_425659755_5BaLdNbbCtQbbiz1JNFBikshfiCWI5NE.jpg"
+                    alt="Testimonial author"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground">
+                    "Luminara transformed my understanding of beauty practices.
+                    I now approach my skincare routine with cultural awareness
+                    and intentionality that I never had before."
+                  </p>
+                  <div>
+                    <h3 className="font-semibold">Emily</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Marketing Executive, Chicago
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 2 */}
+              <div className="flex flex-col items-center space-y-4 rounded-xl bg-[#f8f5f2] p-6 text-center">
+                <div className="relative h-20 w-20 overflow-hidden rounded-full">
+                  <Image
+                    src="https://media.istockphoto.com/id/1392528328/photo/portrait-of-smiling-handsome-man-in-white-t-shirt-standing-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=6vUtfKvHhNsK9kdNWb7EJlksBDhBBok1bNjNRULsAYs="
+                    alt="Testimonial author"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground">
+                    "The critical discussions around wellness commercialization
+                    were eye-opening. I've completely changed how I engage with
+                    and consume wellness products and services."
+                  </p>
+                  <div>
+                    <h3 className="font-semibold">Michael</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Professor of Media Studies, Northwestern
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="flex flex-col items-center space-y-4 rounded-xl bg-[#f8f5f2] p-6 text-center">
+                <div className="relative h-20 w-20 overflow-hidden rounded-full">
+                  <Image
+                    src="https://previews.123rf.com/images/anadesousa/anadesousa0705/anadesousa070500092/909874-young-man-generic-portrait-shot-in-studio-over-white-background.jpg"
+                    alt="Testimonial author"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground">
+                    "The perfect balance of academic depth and hands-on
+                    experience. I left with both knowledge and practical tools
+                    to approach beauty and wellness more ethically."
+                  </p>
+                  <div>
+                    <h3 className="font-semibold">Nicholas</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Wellness Entrepreneur, New York
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 4 (visible on larger screens) */}
+              <div className="flex flex-col items-center space-y-4 rounded-xl bg-[#f8f5f2] p-6 text-center md:hidden lg:flex">
+                <div className="relative h-20 w-20 overflow-hidden rounded-full">
+                  <Image
+                    src="https://previews.123rf.com/images/vlue/vlue1008/vlue100800202/7618514-a-generic-white-cauasian-young-adult-male-smiling-down-at-the-camera-with-a-pleasant-look-on-his.jpg"
+                    alt="Testimonial author"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground">
+                    "The discussions on colorism and beauty hierarchies were
+                    profound and challenging. This retreat gave me language and
+                    context for experiences I've had my whole life."
+                  </p>
+                  <div>
+                    <h3 className="font-semibold">David</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Healthcare Professional, Boston
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 5 (visible on larger screens) */}
+              <div className="flex flex-col items-center space-y-4 rounded-xl bg-[#f8f5f2] p-6 text-center md:hidden lg:flex">
+                <div className="relative h-20 w-20 overflow-hidden rounded-full">
+                  <Image
+                    src="https://as2.ftcdn.net/jpg/01/25/73/71/1000_F_125737171_quNW4uTbH3JRvJVeh3soA1fWwNTGDPOt.jpg"
+                    alt="Testimonial author"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground">
+                    "I came for the skincare tips but left with a completely new
+                    perspective on how beauty practices connect to identity,
+                    culture, and power. Truly eye-opening."
+                  </p>
+                  <div>
+                    <h3 className="font-semibold">Tim</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Beauty Blogger, Los Angeles
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 6 (visible on larger screens) */}
+              <div className="flex flex-col items-center space-y-4 rounded-xl bg-[#f8f5f2] p-6 text-center md:hidden lg:flex">
+                <div className="relative h-20 w-20 overflow-hidden rounded-full">
+                  <Image
+                    src="https://thumbs.dreamstime.com/b/young-woman-laughing-28835570.jpg"
+                    alt="Testimonial author"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <p className="text-muted-foreground">
+                    "The tea ceremony and sound bath experiences were deeply
+                    moving, especially when paired with thoughtful discussions
+                    about their cultural origins and transformations."
+                  </p>
+                  <div>
+                    <h3 className="font-semibold">Sarah</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Yoga Instructor, Seattle
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <Button asChild className="bg-[#9c8b7d] hover:bg-[#7d6e62]">
+                <Link href="/contact">Join Our Next Retreat</Link>
+              </Button>
             </div>
           </div>
         </section>
