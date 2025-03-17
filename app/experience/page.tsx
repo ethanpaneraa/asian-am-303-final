@@ -81,7 +81,9 @@ export default function ExperiencePage() {
                   </div>
                   <div className="relative aspect-video overflow-hidden rounded-xl md:aspect-square">
                     <Image
-                      src="/tea.webp"
+                      src={`${
+                        process.env.NEXT_PUBLIC_BASE_PATH || ""
+                      }/tea.webp`}
                       alt="Tea ceremony setting"
                       fill
                       className="object-cover"
@@ -128,7 +130,9 @@ export default function ExperiencePage() {
                   </div>
                   <div className="relative aspect-video overflow-hidden rounded-xl md:aspect-square">
                     <Image
-                      src="/korean-skin-care.jpg"
+                      src={`${
+                        process.env.NEXT_PUBLIC_BASE_PATH || ""
+                      }/korean-skin-care.jpg`}
                       alt="K-Beauty skincare products"
                       fill
                       className="object-cover"
@@ -174,7 +178,9 @@ export default function ExperiencePage() {
                   </div>
                   <div className="relative aspect-video overflow-hidden rounded-xl md:aspect-square">
                     <Image
-                      src="/sound-bath.jpg"
+                      src={`${
+                        process.env.NEXT_PUBLIC_BASE_PATH || ""
+                      }/sound-bath.jpg`}
                       alt="Sound bath meditation setting"
                       fill
                       className="object-cover"
@@ -220,7 +226,9 @@ export default function ExperiencePage() {
                   </div>
                   <div className="relative aspect-video overflow-hidden rounded-xl md:aspect-square">
                     <Image
-                      src="/yoga-pic.jpeg"
+                      src={`${
+                        process.env.NEXT_PUBLIC_BASE_PATH || ""
+                      }/yoga.jpeg`}
                       alt="Yoga and meditation space"
                       fill
                       className="object-cover"

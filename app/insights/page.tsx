@@ -32,7 +32,9 @@ export default function InsightsPage() {
             <Card className="overflow-hidden flex flex-col">
               <div className="relative aspect-square w-full">
                 <Image
-                  src="/wellness-pic1.png"
+                  src={`${
+                    process.env.NEXT_PUBLIC_BASE_PATH || ""
+                  }/wellness-pic1.png`}
                   alt="Yoga and meditation practice"
                   fill
                   className="object-cover"
@@ -62,7 +64,9 @@ export default function InsightsPage() {
             <Card className="overflow-hidden flex flex-col">
               <div className="relative aspect-square w-full">
                 <Image
-                  src="/k-beauty.jpg"
+                  src={`${
+                    process.env.NEXT_PUBLIC_BASE_PATH || ""
+                  }/k-beauty.jpg`}
                   alt="K-Beauty products display"
                   fill
                   className="object-cover"
@@ -92,7 +96,9 @@ export default function InsightsPage() {
             <Card className="overflow-hidden flex flex-col">
               <div className="relative aspect-square w-full">
                 <Image
-                  src="/colorism.jpg"
+                  src={`${
+                    process.env.NEXT_PUBLIC_BASE_PATH || ""
+                  }/colorism.jpg`}
                   alt="Diverse skin tones and beauty products"
                   fill
                   className="object-cover"
@@ -123,7 +129,9 @@ export default function InsightsPage() {
             <Card className="overflow-hidden flex flex-col">
               <div className="relative aspect-square w-full">
                 <Image
-                  src="/influencer.webp"
+                  src={`${
+                    process.env.NEXT_PUBLIC_BASE_PATH || ""
+                  }/influencer.webp`}
                   alt="Social media influencers and beauty content"
                   fill
                   className="object-cover"

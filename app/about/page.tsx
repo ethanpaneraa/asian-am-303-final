@@ -26,7 +26,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-video overflow-hidden rounded-xl lg:aspect-square">
               <Image
-                src="/yoga.jpeg"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/yoga.jpeg`}
                 alt="Meditation space with natural elements"
                 fill
                 className="object-cover"
