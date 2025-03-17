@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Instagram, Facebook, Twitter } from "lucide-react"
+import Link from "next/link";
+import { Instagram, Facebook, Twitter } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -8,22 +8,35 @@ export function SiteFooter() {
         <div className="flex flex-col gap-2">
           <h3 className="font-serif text-lg font-semibold">Luminara</h3>
           <p className="text-sm text-muted-foreground">
-            An immersive experience in Asian and Asian American beauty and wellness traditions.
+            An immersive experience in Asian and Asian American beauty and
+            wellness traditions.
           </p>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Quick Links</h3>
           <nav className="flex flex-col gap-2">
-            <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link
+              href="/about"
+              className="text-sm text-muted-foreground hover:text-foreground"
+            >
               About
             </Link>
-            <Link href="/experience" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link
+              href="/experience"
+              className="text-sm text-muted-foreground hover:text-foreground"
+            >
               Experience
             </Link>
-            <Link href="/insights" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link
+              href="/insights"
+              className="text-sm text-muted-foreground hover:text-foreground"
+            >
               Insights
             </Link>
-            <Link href="/ethical-engagement" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link
+              href="/ethical-engagement"
+              className="text-sm text-muted-foreground hover:text-foreground"
+            >
               Ethical Engagement
             </Link>
           </nav>
@@ -39,25 +52,37 @@ export function SiteFooter() {
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Follow Us</h3>
           <div className="flex gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link
+              href="https://ethanpinedaa.dev/"
+              target="_blank"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <Instagram className="h-5 w-5" />
               <span className="sr-only">Instagram</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link
+              href="https://ethanpinedaa.dev/"
+              target="_blank"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <Facebook className="h-5 w-5" />
               <span className="sr-only">Facebook</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link
+              href="https://ethanpinedaa.dev/"
+              target="_blank"
+              className="text-muted-foreground hover:text-foreground"
+            >
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </Link>
           </div>
           <p className="mt-4 text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Luminara Wellness Retreat. All rights reserved.
+            &copy; {new Date().getFullYear()} Luminara Wellness Retreat. All
+            rights reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

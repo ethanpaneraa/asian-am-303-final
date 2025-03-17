@@ -1,5 +1,11 @@
-import Image from "next/image"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function InsightsPage() {
   return (
@@ -12,7 +18,8 @@ export default function InsightsPage() {
                 Beauty & Wellness Insights
               </h1>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                The academic framework behind the retreat, breaking down the key readings in accessible language.
+                The academic framework behind the retreat, breaking down the key
+                readings in accessible language.
               </p>
             </div>
           </div>
@@ -21,103 +28,130 @@ export default function InsightsPage() {
 
       <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-2">
-            <Card className="overflow-hidden">
-              <div className="relative h-60">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <Card className="overflow-hidden flex flex-col">
+              <div className="relative aspect-square w-full">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/wellness-pic1.png"
                   alt="Yoga and meditation practice"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif">The Branding of Wellness</CardTitle>
-                <CardDescription>How Ayurveda and yoga were transformed into consumer products</CardDescription>
+              <CardHeader className="p-4">
+                <CardTitle className="text-xl font-serif">
+                  The Branding of Wellness
+                </CardTitle>
+                <CardDescription className="text-sm">
+                  How Ayurveda and yoga were transformed into consumer products
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  This theme explores how ancient practices like yoga and Ayurveda have been commodified in Western
-                  markets. We examine how these traditions have been stripped of their cultural and spiritual contexts
-                  to become marketable products, and what this means for both practitioners and the cultures from which
-                  these practices originate.
+              <CardContent className="p-4 pt-0 flex-grow">
+                <p className="text-sm text-muted-foreground">
+                  This theme explores how ancient practices like yoga and
+                  Ayurveda have been commodified in Western markets. We examine
+                  how these traditions have been stripped of their cultural and
+                  spiritual contexts to become marketable products.
                 </p>
-                <p className="mt-4 text-sm text-[#9c8b7d]">Reading Reference: Khan (2022), Jain (2015)</p>
+                <p className="mt-4 text-xs text-[#9c8b7d]">
+                  Reading Reference: Khan (2022), Jain (2015)
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden">
-              <div className="relative h-60">
+            <Card className="overflow-hidden flex flex-col">
+              <div className="relative aspect-square w-full">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/k-beauty.jpg"
                   alt="K-Beauty products display"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif">The Rise of K-Beauty</CardTitle>
-                <CardDescription>How Korean beauty reshaped global beauty standards</CardDescription>
+              <CardHeader className="p-4">
+                <CardTitle className="text-xl font-serif">
+                  The Rise of K-Beauty
+                </CardTitle>
+                <CardDescription className="text-sm">
+                  How Korean beauty reshaped global beauty standards
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  K-Beauty has become a global phenomenon, influencing beauty standards and practices worldwide. This
-                  theme examines the cultural, economic, and social factors that contributed to the rise of K-Beauty, as
-                  well as its impact on Asian and Asian American identities and self-perception.
+              <CardContent className="p-4 pt-0 flex-grow">
+                <p className="text-sm text-muted-foreground">
+                  K-Beauty has become a global phenomenon, influencing beauty
+                  standards and practices worldwide. This theme examines the
+                  cultural, economic, and social factors that contributed to its
+                  rise.
                 </p>
-                <p className="mt-4 text-sm text-[#9c8b7d]">Reading Reference: Suh (2023)</p>
+                <p className="mt-4 text-xs text-[#9c8b7d]">
+                  Reading Reference: Suh (2023)
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden">
-              <div className="relative h-60">
+            <Card className="overflow-hidden flex flex-col">
+              <div className="relative aspect-square w-full">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/colorism.jpg"
                   alt="Diverse skin tones and beauty products"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif">Colorism & Beauty Hierarchies</CardTitle>
-                <CardDescription>Why skin whitening products remain a global billion-dollar industry</CardDescription>
+              <CardHeader className="p-4">
+                <CardTitle className="text-xl font-serif">
+                  Colorism & Beauty Hierarchies
+                </CardTitle>
+                <CardDescription className="text-sm">
+                  Why skin whitening products remain a global billion-dollar
+                  industry
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  This theme explores the complex relationship between skin color, beauty standards, and power dynamics
-                  in Asian cultures. We examine the historical, colonial, and social factors that have contributed to
-                  the preference for fair skin, and the implications this has for individuals and communities.
+              <CardContent className="p-4 pt-0 flex-grow">
+                <p className="text-sm text-muted-foreground">
+                  This theme explores the complex relationship between skin
+                  color, beauty standards, and power dynamics in Asian cultures.
+                  We examine the historical and social factors behind fair skin
+                  preference.
                 </p>
-                <p className="mt-4 text-sm text-[#9c8b7d]">Reading Reference: Parameswaran (2011)</p>
+                <p className="mt-4 text-xs text-[#9c8b7d]">
+                  Reading Reference: Parameswaran (2011)
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden">
-              <div className="relative h-60">
+            <Card className="overflow-hidden flex flex-col">
+              <div className="relative aspect-square w-full">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/influencer.webp"
                   alt="Social media influencers and beauty content"
                   fill
                   className="object-cover"
                 />
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl font-serif">Social Media & Influencer Culture</CardTitle>
-                <CardDescription>Why beauty visibility does not always mean beauty empowerment</CardDescription>
+              <CardHeader className="p-4">
+                <CardTitle className="text-xl font-serif">
+                  Social Media & Influencer Culture
+                </CardTitle>
+                <CardDescription className="text-sm">
+                  Why beauty visibility does not always mean beauty empowerment
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Social media has transformed how beauty is defined, consumed, and marketed. This theme examines the
-                  role of influencers in shaping beauty standards, the economics of attention in digital spaces, and the
-                  complex relationship between visibility, authenticity, and commercialization in beauty content.
+              <CardContent className="p-4 pt-0 flex-grow">
+                <p className="text-sm text-muted-foreground">
+                  Social media has transformed how beauty is defined, consumed,
+                  and marketed. This theme examines the role of influencers in
+                  shaping beauty standards and the economics of attention in
+                  digital spaces.
                 </p>
-                <p className="mt-4 text-sm text-[#9c8b7d]">Reading Reference: Kim (2023)</p>
+                <p className="mt-4 text-xs text-[#9c8b7d]">
+                  Reading Reference: Kim (2023)
+                </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }
-
