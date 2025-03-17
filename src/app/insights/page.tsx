@@ -1,0 +1,163 @@
+import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+export default function InsightsPage() {
+  return (
+    <main className="flex-1">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f8f5f2]">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-serif tracking-tighter sm:text-4xl md:text-5xl text-[#3a3a3a]">
+                Beauty & Wellness Insights
+              </h1>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+                The academic framework behind the retreat, breaking down the key
+                readings in accessible language.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-8 md:grid-cols-2">
+            <Card className="overflow-hidden">
+              <div className="relative h-60">
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Yoga and meditation practice"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl font-serif">
+                  The Branding of Wellness
+                </CardTitle>
+                <CardDescription>
+                  How Ayurveda and yoga were transformed into consumer products
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  This theme explores how ancient practices like yoga and
+                  Ayurveda have been commodified in Western markets. We examine
+                  how these traditions have been stripped of their cultural and
+                  spiritual contexts to become marketable products, and what
+                  this means for both practitioners and the cultures from which
+                  these practices originate.
+                </p>
+                <p className="mt-4 text-sm text-[#9c8b7d]">
+                  Reading Reference: Khan (2022), Jain (2015)
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="relative h-60">
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="K-Beauty products display"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl font-serif">
+                  The Rise of K-Beauty
+                </CardTitle>
+                <CardDescription>
+                  How Korean beauty reshaped global beauty standards
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  K-Beauty has become a global phenomenon, influencing beauty
+                  standards and practices worldwide. This theme examines the
+                  cultural, economic, and social factors that contributed to the
+                  rise of K-Beauty, as well as its impact on Asian and Asian
+                  American identities and self-perception.
+                </p>
+                <p className="mt-4 text-sm text-[#9c8b7d]">
+                  Reading Reference: Suh (2023)
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="relative h-60">
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Diverse skin tones and beauty products"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl font-serif">
+                  Colorism & Beauty Hierarchies
+                </CardTitle>
+                <CardDescription>
+                  Why skin whitening products remain a global billion-dollar
+                  industry
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  This theme explores the complex relationship between skin
+                  color, beauty standards, and power dynamics in Asian cultures.
+                  We examine the historical, colonial, and social factors that
+                  have contributed to the preference for fair skin, and the
+                  implications this has for individuals and communities.
+                </p>
+                <p className="mt-4 text-sm text-[#9c8b7d]">
+                  Reading Reference: Parameswaran (2011)
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="relative h-60">
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Social media influencers and beauty content"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-2xl font-serif">
+                  Social Media & Influencer Culture
+                </CardTitle>
+                <CardDescription>
+                  Why beauty visibility does not always mean beauty empowerment
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Social media has transformed how beauty is defined, consumed,
+                  and marketed. This theme examines the role of influencers in
+                  shaping beauty standards, the economics of attention in
+                  digital spaces, and the complex relationship between
+                  visibility, authenticity, and commercialization in beauty
+                  content.
+                </p>
+                <p className="mt-4 text-sm text-[#9c8b7d]">
+                  Reading Reference: Kim (2023)
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
