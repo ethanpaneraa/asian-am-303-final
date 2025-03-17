@@ -47,7 +47,9 @@ export default function Home() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-xl lg:order-last">
                 <Image
-                  src="/placeholder.svg?height=800&width=800"
+                  src={`${
+                    process.env.NEXT_PUBLIC_BASE_PATH || ""
+                  }/bamboo-forest.jpg`}
                   alt="Serene tea ceremony setting"
                   fill
                   className="object-cover"
