@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -28,7 +30,7 @@ export default function InsightsPage() {
 
       <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-5xl">
             <Card className="overflow-hidden flex flex-col">
               <div className="relative aspect-square w-full">
                 <Image
@@ -54,9 +56,6 @@ export default function InsightsPage() {
                   Ayurveda have been commodified in Western markets. We examine
                   how these traditions have been stripped of their cultural and
                   spiritual contexts to become marketable products.
-                </p>
-                <p className="mt-4 text-xs text-[#9c8b7d]">
-                  Reading Reference: Khan (2022), Jain (2015)
                 </p>
               </CardContent>
             </Card>
@@ -86,9 +85,6 @@ export default function InsightsPage() {
                   standards and practices worldwide. This theme examines the
                   cultural, economic, and social factors that contributed to its
                   rise.
-                </p>
-                <p className="mt-4 text-xs text-[#9c8b7d]">
-                  Reading Reference: Suh (2023)
                 </p>
               </CardContent>
             </Card>
@@ -120,43 +116,14 @@ export default function InsightsPage() {
                   We examine the historical and social factors behind fair skin
                   preference.
                 </p>
-                <p className="mt-4 text-xs text-[#9c8b7d]">
-                  Reading Reference: Parameswaran (2011)
-                </p>
               </CardContent>
             </Card>
+          </div>
 
-            <Card className="overflow-hidden flex flex-col">
-              <div className="relative aspect-square w-full">
-                <Image
-                  src={`${
-                    process.env.NEXT_PUBLIC_BASE_PATH || ""
-                  }/influencer.webp`}
-                  alt="Social media influencers and beauty content"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <CardHeader className="p-4">
-                <CardTitle className="text-xl font-serif">
-                  Social Media & Influencer Culture
-                </CardTitle>
-                <CardDescription className="text-sm">
-                  Why beauty visibility does not always mean beauty empowerment
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-4 pt-0 flex-grow">
-                <p className="text-sm text-muted-foreground">
-                  Social media has transformed how beauty is defined, consumed,
-                  and marketed. This theme examines the role of influencers in
-                  shaping beauty standards and the economics of attention in
-                  digital spaces.
-                </p>
-                <p className="mt-4 text-xs text-[#9c8b7d]">
-                  Reading Reference: Kim (2023)
-                </p>
-              </CardContent>
-            </Card>
+          <div className="flex justify-center mt-12">
+            <Button asChild className="bg-[#9c8b7d] hover:bg-[#7d6e62]">
+              <Link href="/essay">Read our essay on beauty & wellness</Link>
+            </Button>
           </div>
         </div>
       </section>

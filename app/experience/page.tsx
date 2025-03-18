@@ -21,21 +21,21 @@ export default function ExperiencePage() {
                 The Weekend Experience
               </h1>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                Step into a sanctuary of self-discovery. Over the course of a
-                weekend, you'll explore beauty and wellness traditions rooted in
-                Asian and Asian American histories—tracing their transformations
-                from sacred rituals to billion-dollar industries. Through
-                immersive experiences, thought-provoking discussions, and
-                embodied practices, you'll leave with a deeper understanding of
-                what it means to care for yourself while honoring the histories
-                behind these traditions.
+                Step into a space of both immersion and reflection. Over the
+                course of a weekend, you'll engage with Asian and Asian American
+                beauty and wellness traditions—not just as self-care practices,
+                but as industries shaped by history, race, and commerce. Through
+                immersive experiences and critical discussions, this retreat
+                challenges participants to rethink the narratives behind these
+                traditions and their place within global beauty and wellness
+                markets.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto py-12 md:py-24 lg:py-32 bg-white">
+      <section className="w-full  mx-auto py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
           <Tabs defaultValue="friday" className="w-full">
             <TabsList className="w-4xl mx-auto grid grid-cols-4">
