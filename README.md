@@ -25,7 +25,7 @@ I created and designed Luminara with the idea of _what would be the most realist
 
 In terms of the actual essay and paper, I tried to mix in both my "academic prose" with trying to fit in a more creative and description of the day-to-day activities. The goal here when I was writing it was two fold, I wanted to make it somewhat interesting, while making it academic at the same time. My goal was that it would be presented as kind of a "blog" post style on the actual website with the raw PDF downloadable for grading.
 
-If I had more time and capacity, I probably would have made the website more interactive, ideally by adding animations, changing the layout of some things and making it feel less "bland" but overall, I'm pretty happy with how everything turned out.
+If I had more time and capacity, I probably would have made the website more interactive, ideally by adding animations, changing the layout of some things and making it feel less "bland" but overall, I'm pretty happy with how everything turned out. The final results are ~2000 lines of code and almost a 2,000 word essay.
 
 ## 🛠️ Tech Stack
 
