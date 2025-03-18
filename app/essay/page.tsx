@@ -34,6 +34,16 @@ export default function EssayPage() {
                   <p className="font-bold">Word Count:</p>
                   <span>2,500 words</span>
                 </div>
+                <div className="flex items-center space-x-1 text-sm text-muted-foreground">
+                  <p className="font-bold">Download raw PDF:</p>
+                  <Link
+                    href="/Pineda_Ethan_ASIAN_AM_303.pdf"
+                    className="text-[#9c8b7d] hover:underline"
+                  >
+                    Beauty, Wellness, and Power: A Retreat into Global
+                    Consumption (PDF)
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
