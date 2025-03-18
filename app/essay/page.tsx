@@ -32,7 +32,7 @@ export default function EssayPage() {
                   <span>15 minutes</span>
 
                   <p className="font-bold">Word Count:</p>
-                  <span>2,500 words</span>
+                  <span>1,853 words</span>
                 </div>
                 <div className="flex items-center space-x-1 text-sm text-muted-foreground">
                   <p className="font-bold">Download raw PDF:</p>
@@ -104,6 +104,9 @@ export default function EssayPage() {
 
           <article className="prose prose-slate max-w-none">
             <section id="introduction">
+              <h2 className="text-2xl font-serif tracking-tight text-[#3a3a3a]">
+                Introduction
+              </h2>
               <p>
                 Asian and Asian American beauty and wellness standards and
                 traditions have become deeply embedded within Western markets.

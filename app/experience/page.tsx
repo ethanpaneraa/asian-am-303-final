@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function ExperiencePage() {
@@ -35,17 +28,12 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      <section className="w-full  mx-auto py-12 md:py-24 lg:py-32 bg-white">
+      <section className="w-full mx-auto py-12 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 md:px-6">
           <Tabs defaultValue="friday" className="w-full">
-            <TabsList className="w-4xl mx-auto grid grid-cols-4">
+            <TabsList className="w-4xl mx-auto grid grid-cols-3">
               <TabsTrigger value="friday">Friday</TabsTrigger>
-              <TabsTrigger value="saturday-morning">
-                Saturday Morning
-              </TabsTrigger>
-              <TabsTrigger value="saturday-evening">
-                Saturday Evening
-              </TabsTrigger>
+              <TabsTrigger value="saturday">Saturday</TabsTrigger>
               <TabsTrigger value="sunday">Sunday</TabsTrigger>
             </TabsList>
             <TabsContent value="friday" className="mt-6">
@@ -122,147 +110,134 @@ export default function ExperiencePage() {
                 </div>
               </div>
             </TabsContent>
-            <TabsContent value="saturday-morning" className="mt-6">
-              <div className="grid md:grid-cols-2 overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm h-full">
-                <div className="flex flex-col">
-                  <div className="flex flex-col space-y-1.5 p-6">
-                    <h3 className="text-2xl font-serif">
-                      Saturday Morning: K-Beauty & Digital Influences
-                    </h3>
-                    <p className="text-muted-foreground">
-                      In front of you, a carefully arranged K-Beauty skincare
-                      ritual awaits—each step meticulously designed to create
-                      the coveted 'glass skin' effect. As you apply serums and
-                      masks, we'll discuss: Who gets to define beauty? How do
-                      media, influencers, and digital culture shape the way we
-                      see ourselves? The global K-Beauty boom has transformed
-                      the beauty industry, but does it empower or reinforce
-                      unattainable standards?
-                    </p>
-                  </div>
-                  <div className="p-6 pt-0">
-                    <div className="space-y-6">
-                      <div className="space-y-1">
-                        <div className="flex items-center">
-                          <span className="font-medium text-sm text-[#9c8b7d] w-20">
-                            9:00 AM
-                          </span>
-                          <h3 className="text-xl font-semibold">
-                            The K-Beauty Phenomenon: A Live Skincare Ritual
-                          </h3>
+            <TabsContent value="saturday" className="mt-6">
+              <div className="space-y-10">
+                {/* Morning Section */}
+                <div className="grid md:grid-cols-2 overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm h-full">
+                  <div className="flex flex-col">
+                    <div className="flex flex-col space-y-1.5 p-6">
+                      <h3 className="text-2xl font-serif">
+                        Saturday Morning: K-Beauty & Digital Influences
+                      </h3>
+                      <p className="text-muted-foreground">
+                        In front of you, a carefully arranged K-Beauty skincare
+                        ritual awaits—each step meticulously designed to create
+                        the coveted 'glass skin' effect. As you apply serums and
+                        masks, we'll discuss: Who gets to define beauty? How do
+                        media, influencers, and digital culture shape the way we
+                        see ourselves? The global K-Beauty boom has transformed
+                        the beauty industry, but does it empower or reinforce
+                        unattainable standards?
+                      </p>
+                    </div>
+                    <div className="p-6 pt-0">
+                      <div className="space-y-6">
+                        <div className="space-y-1">
+                          <div className="flex items-center">
+                            <span className="font-medium text-sm text-[#9c8b7d] w-20">
+                              9:00 AM
+                            </span>
+                            <h3 className="text-xl font-semibold">
+                              The K-Beauty Phenomenon: A Live Skincare Ritual
+                            </h3>
+                          </div>
+                          <p className="text-muted-foreground">
+                            "Instagram vs. Reality" Activity: Guests will
+                            compare real K-Beauty marketing campaigns vs.
+                            traditional Korean beauty ideals and discuss how
+                            these standards have shifted due to Westernization
+                            and social media.
+                          </p>
+                          <p className="text-muted-foreground mt-2">
+                            <span className="font-medium">
+                              Framing Question:
+                            </span>{" "}
+                            Does visibility in beauty spaces equal empowerment,
+                            or does it come with new expectations?
+                          </p>
                         </div>
-                        <p className="text-muted-foreground">
-                          "Instagram vs. Reality" Activity: Guests will compare
-                          real K-Beauty marketing campaigns vs. traditional
-                          Korean beauty ideals and discuss how these standards
-                          have shifted due to Westernization and social media.
-                        </p>
-                        <p className="text-muted-foreground mt-2">
-                          <span className="font-medium">Framing Question:</span>{" "}
-                          Does visibility in beauty spaces equal empowerment, or
-                          does it come with new expectations?
-                        </p>
-                      </div>
-                      <div className="space-y-1">
-                        <div className="flex items-center">
-                          <span className="font-medium text-sm text-[#9c8b7d] w-20">
-                            11:00 AM
-                          </span>
-                          <h3 className="text-xl font-semibold">
-                            Social Media & The Attention Economy
-                          </h3>
+                        <div className="space-y-1">
+                          <div className="flex items-center">
+                            <span className="font-medium text-sm text-[#9c8b7d] w-20">
+                              11:00 AM
+                            </span>
+                            <h3 className="text-xl font-semibold">
+                              Social Media & The Attention Economy
+                            </h3>
+                          </div>
+                          <p className="text-muted-foreground">
+                            How Asian beauty influencers navigate visibility,
+                            authenticity, and commercialization.
+                          </p>
+                          <p className="text-sm text-[#9c8b7d]">
+                            Reading Reference: Suh (2023)
+                          </p>
                         </div>
-                        <p className="text-muted-foreground">
-                          How Asian beauty influencers navigate visibility,
-                          authenticity, and commercialization.
-                        </p>
-                        <p className="text-sm text-[#9c8b7d]">
-                          Reading Reference: Suh (2023)
-                        </p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="relative w-full h-full min-h-[400px]">
-                  <Image
-                    src={`${
-                      process.env.NEXT_PUBLIC_BASE_PATH || ""
-                    }/korean-skin-care.jpg`}
-                    alt="K-Beauty skincare products"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </TabsContent>
-            <TabsContent value="saturday-evening" className="mt-6">
-              <div className="grid md:grid-cols-2 overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm h-full">
-                <div className="flex flex-col">
-                  <div className="flex flex-col space-y-1.5 p-6">
-                    <h3 className="text-2xl font-serif">
-                      Saturday Evening: Colorism, Skin, & Self-Perception
-                    </h3>
-                    <p className="text-muted-foreground">
-                      A single advertisement for a fairness cream can sell more
-                      than a thousand words. Tonight, we gather around the fire
-                      to examine the economy of skin tone—from India's 'Fair &
-                      Lovely' campaigns to Korea's obsession with 'milky white'
-                      complexions. Through stories, media, and lived
-                      experiences, we confront the uncomfortable question: How
-                      has colorism shaped our own perceptions of beauty?
-                    </p>
+                  <div className="relative w-full h-full min-h-[400px]">
+                    <Image
+                      src={`${
+                        process.env.NEXT_PUBLIC_BASE_PATH || ""
+                      }/korean-skin-care.jpg`}
+                      alt="K-Beauty skincare products"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <div className="p-6 pt-0">
-                    <div className="space-y-6">
-                      <div className="space-y-1">
-                        <div className="flex items-center">
-                          <span className="font-medium text-sm text-[#9c8b7d] w-20">
-                            4:00 PM
-                          </span>
-                          <h3 className="text-xl font-semibold">
-                            The Politics of Skin: A Fireside Discussion
-                          </h3>
+                </div>
+
+                {/* Evening Section */}
+                <div className="grid md:grid-cols-2 overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm h-full">
+                  <div className="flex flex-col">
+                    <div className="flex flex-col space-y-1.5 p-6">
+                      <h3 className="text-2xl font-serif">
+                        Saturday Evening: Colorism, Skin, & Self-Perception
+                      </h3>
+                      <p className="text-muted-foreground">
+                        A single advertisement for a fairness cream can sell
+                        more than a thousand words. Tonight, we gather around
+                        the fire to examine the economy of skin tone—from
+                        India's 'Fair & Lovely' campaigns to Korea's obsession
+                        with 'milky white' complexions. Through stories, media,
+                        and lived experiences, we confront the uncomfortable
+                        question: How has colorism shaped our own perceptions of
+                        beauty?
+                      </p>
+                    </div>
+                    <div className="p-6 pt-0">
+                      <div className="space-y-6">
+                        <div className="space-y-1">
+                          <div className="flex items-center">
+                            <span className="font-medium text-sm text-[#9c8b7d] w-20">
+                              7:00 PM
+                            </span>
+                            <h3 className="text-xl font-semibold">
+                              Shinrin-Yoku & Sound Bath Healing
+                            </h3>
+                          </div>
+                          <p className="text-muted-foreground">
+                            A sensory experience designed to encourage
+                            self-reflection on the body, beauty, and well-being.
+                          </p>
+                          <p className="text-sm text-[#9c8b7d]">
+                            Reading Reference: Parameswaran (2011)
+                          </p>
                         </div>
-                        <p className="text-muted-foreground">
-                          Interactive Media Analysis: Guests will watch
-                          before-and-after fairness cream commercials and
-                          discuss how beauty hierarchies are reinforced.
-                        </p>
-                        <p className="text-muted-foreground mt-2">
-                          <span className="font-medium">Framing Question:</span>{" "}
-                          How does the beauty industry capitalize on insecurity?
-                          Who benefits from these ideals?
-                        </p>
-                      </div>
-                      <div className="space-y-1">
-                        <div className="flex items-center">
-                          <span className="font-medium text-sm text-[#9c8b7d] w-20">
-                            7:00 PM
-                          </span>
-                          <h3 className="text-xl font-semibold">
-                            Shinrin-Yoku & Sound Bath Healing
-                          </h3>
-                        </div>
-                        <p className="text-muted-foreground">
-                          A sensory experience designed to encourage
-                          self-reflection on the body, beauty, and well-being.
-                        </p>
-                        <p className="text-sm text-[#9c8b7d]">
-                          Reading Reference: Parameswaran (2011)
-                        </p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="relative w-full h-full min-h-[400px]">
-                  <Image
-                    src={`${
-                      process.env.NEXT_PUBLIC_BASE_PATH || ""
-                    }/sound-bath.jpg`}
-                    alt="Sound bath meditation setting"
-                    fill
-                    className="object-cover"
-                  />
+                  <div className="relative w-full h-full min-h-[400px]">
+                    <Image
+                      src={`${
+                        process.env.NEXT_PUBLIC_BASE_PATH || ""
+                      }/sound-bath.jpg`}
+                      alt="Sound bath meditation setting"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </TabsContent>
@@ -286,27 +261,6 @@ export default function ExperiencePage() {
                   </div>
                   <div className="p-6 pt-0">
                     <div className="space-y-6">
-                      <div className="space-y-1">
-                        <div className="flex items-center">
-                          <span className="font-medium text-sm text-[#9c8b7d] w-20">
-                            8:30 AM
-                          </span>
-                          <h3 className="text-xl font-semibold">
-                            Yoga & The Search for Authenticity
-                          </h3>
-                        </div>
-                        <p className="text-muted-foreground">
-                          Revisiting the "Reclaiming Ritual" Activity: Guests
-                          will look back at their original wellness practice and
-                          consider what they've learned and how they'll engage
-                          with it moving forward.
-                        </p>
-                        <p className="text-muted-foreground mt-2">
-                          <span className="font-medium">Framing Question:</span>{" "}
-                          How do we move forward with mindfulness—without
-                          falling into the same cycles of consumption?
-                        </p>
-                      </div>
                       <div className="space-y-1">
                         <div className="flex items-center">
                           <span className="font-medium text-sm text-[#9c8b7d] w-20">
